@@ -38,13 +38,13 @@ let checkOrder = () => {
         }
     }
     if (clickedOrder.length == order.length) {
-        alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!`);
+        alert(`Parabéns, você acertou!\nPontuação: ${score}\nIniciando o próximo nível!`)
         nextLevel()
     }
 }
 //Funçao para (piscar) os cliques do usuário
 let click = (color)  => {
-    clickedOrder[clickedOrder.length] = color;
+    clickedOrder[clickedOrder.length] = color
     createColorElement(color).classList.add('selected')
 
     setTimeout( () => {
@@ -68,7 +68,7 @@ let nextLevel = () => {
 }
 //Funcao para o fim do Jogo (Falha)
 let GameOver = () => {
-    alert(`Pontuação: ${score}\nVocê perdeu o jogo...\nClique para começar um novo jogo!`)
+    alert(`Você errou... :(\nPontuação: ${score}\nClique em OK para jogar novamente.`)
     order = []
     clickedOrder = []
 
@@ -76,7 +76,8 @@ let GameOver = () => {
 }
 //Funcao para iniciar o jogo (Inicio)
 let playGame = () => {
-    alert(`Bem-vindo ao Genius! Iniciando o jogo...`)
+    alert(`Bem-vindo ao Genius!\nCarregando o jogo...`)
+    alert('Acerte a ordem correta!\nClique em OK para começar!')
     score = 0
 
     nextLevel()

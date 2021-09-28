@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(168, 243, 218);
+    background-color: #363636;
 }
 
 .main-game {
@@ -25,25 +25,25 @@ body {
 
 .blue {
     grid-area: azul;
-    background-color: rgb(2, 2, 173);
+    background-color: blue;
     border-bottom-right-radius: 100%;
 }
 
 .red {
     grid-area: vermelho;
-    background-color: rgb(158, 5, 5);
+    background-color: red;
     border-top-right-radius: 100%;
 }
 
 .yellow {
     grid-area: amarelo;
-    background-color: rgb(168, 168, 0);
+    background-color: yellow;
     border-bottom-left-radius: 100%;
 }
 
 .green {
     grid-area: verde;
-    background-color: rgb(3, 78, 3);
+    background-color: green;
     border-top-left-radius: 100%;
 }
 
